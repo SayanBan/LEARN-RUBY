@@ -1,0 +1,71 @@
+STRINGS
+
+As mentioned in the previous lessons, a string is text between single or double quotation marks.
+
+However, some characters can't be directly included in a string. 
+For instance, single quotes can't be directly included in a single quote string, because 
+this would designate the end of the string. Characters like these can be included in a string by using an escape sequence,
+which is indicated by a backslash (\):
+
+text = 'Ruby\'s syntax is fun'
+puts text
+# outputs Ruby's syntax is fun
+
+A string formed with double quotation marks can also include the \n escape sequence, which represents a new line.
+
+text = "Hello \n World"
+puts text
+
+# Outputs:
+# Hello
+#  World
+
+Only the \' and \\ escape sequences can be used with single quote strings.
+
+
+STRING INTERPOLATION
+
+You can embed any Ruby expression inside a double quote string using #{ }, just as you did with variable names. 
+Ruby evaluates the placeholders and replaces them with values:
+a = 5
+b = 2
+puts "The sum is #{a+b}"
+# outputs "The sum is 7"
+
+Note that there is no space between the hash mark (#) and the opening curly brace ({). In case of a space, 
+it will be interpreted as literal text.
+
+Concatenation
+
+Strings can be joined using the + in a process called concatenation.
+
+When concatenating strings, it doesn't matter whether they've been created with single or double quotes.
+
+a = "Hi "
+b = 'there'
+puts a+b
+# outputs "Hi there" 
+
+
+Even if your strings contain numbers, they are still added as strings rather than integers. 
+Adding a string to a number produces an error, because even though they might look similar, 
+they are two different entities: "1" is a string, whereas 1 is an integer.
+
+REPEATING A STRING
+
+Strings can be repeated using the * and an integer value.
+
+The order of the string and the integer does matter: the string has to come first.
+
+For example:
+a = "abc"
+puts a*3
+
+# outputs "abcabcabc"
+
+puts '5'*4
+
+# outputs 5555
+
+
+Strings can't be multiplied by other strings.
