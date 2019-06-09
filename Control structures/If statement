@@ -1,0 +1,36 @@
+IF STATEMENT
+
+You can use an if expression to execute code when a certain condition holds.
+If a conditional expression evaluates to true, the if code is carried out. Otherwise, the code is ignored.
+
+For example:
+
+a = 42
+
+if a > 7
+  puts "Yes"
+end
+
+# outputs "Yes"
+
+The condition a > 7 is evaluated. When it is true, the statements inside the if are executed and the program outputs Yes.
+You can have multiple statements inside a single if expression.
+The end keyword is required to indicate the end of the if.
+
+IF STATEMENT
+
+if expressions can be nested, one inside the other.
+This means that the inner if is the code part of the outer one. This is one way to see whether multiple conditions are satisfied. Keep in mind that once an if condition fails, the entire block is exited.
+
+num = 16
+if num > 7
+  puts "Greater than 7"
+  if num < 42
+    puts "Between 7 and 42"
+  end
+end
+# outputs:
+# Greater than 7
+# Between 7 and 42
+
+Each if has to have a corresponding end.
