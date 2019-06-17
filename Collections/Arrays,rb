@@ -1,0 +1,23 @@
+Arrays
+
+An Array is essentially a list of numbered items.
+The items are declared in a comma-separated list and enclosed in square brackets.
+
+For example: items = ["Apple", "Orange", "Banana"]
+
+The code above declares an array named items containing three strings.
+
+Each item has its own unique index with the first item at index zero.
+To refer to an item, we need to refer to its index:
+puts items[0]
+# outputs "Apple"
+
+You can assign any array element a new value by using its index:
+
+items[1] = "Kiwi"
+
+
+This will assign the element with index 1 the value "Kiwi".
+A negative index is assumed relative to the end of the array. 
+
+For example, an index of -1 indicates the last element of the array, -2 is the next to last element in the array, and so on.
