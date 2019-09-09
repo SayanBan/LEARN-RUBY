@@ -1,4 +1,4 @@
-#METHODS
+# METHODS
 
 **PART 1**
 
@@ -7,7 +7,7 @@ You can define your own methods to perform your desired tasks.
 The def keyword is used to define a method. **
 
 
-#CODE
+# CODE
 
 def say
   puts "Hi"
