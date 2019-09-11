@@ -1,4 +1,4 @@
-# Returning Values
+# Returning Values I
 
 ** Until now all the methods we have defined output values. Sometimes you need a method to perform an action and return the result so that the returned value can be used further in the program (for example, by assigning the return value to a variable).
 The return keyword is used to return a value from a method. **
@@ -14,7 +14,7 @@ x = sum(5, 23)
 puts x
 
 
-# Returning Values
+# Returning Values II
 
 You can return multiple values from a method by separating them with commas in the return statement.
 
