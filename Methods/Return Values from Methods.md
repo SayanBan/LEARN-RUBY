@@ -69,3 +69,17 @@ In the code above we chained our defined square method with the times iterator. 
 
 If anywhere along the chain there is a nil or an error, the entire chained call will break down.
 
+# Methods as Arguments
+
+We can also pass methods as arguments to other methods. The returned values of those methods will be used as the actual values for the arguments, for example:
+def add(a, b)
+  a+b
+end
+
+def mult(a, b)
+  a*b
+end
+
+x = mult(add(2, 3), add(4, 7))
+puts x
+#outputs 55
