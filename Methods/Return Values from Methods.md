@@ -53,3 +53,19 @@ a = 9
 end
 
 The method above will return the value 5. The statement a=9 is ignored.
+
+
+# Chaining Methods
+
+Because all methods return a value, we can chain multiple methods together, as well as chain methods with iterators.
+For example:
+def square(x)
+  x*x
+end
+
+square(4).times {puts "Hi"}
+
+In the code above we chained our defined square method with the times iterator. As square(4) will return 16, the loop will run and output "Hi" 16 times.
+
+If anywhere along the chain there is a nil or an error, the entire chained call will break down.
+
