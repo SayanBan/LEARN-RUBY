@@ -32,3 +32,10 @@ def x(y)
   res
 end
 puts x(3)
+
+#Answer
+
+1. def, b, end
+2. 8
+3. *, p, x
+4. 6
